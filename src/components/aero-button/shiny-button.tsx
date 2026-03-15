@@ -54,7 +54,6 @@ export const ShinyButton: React.FC<ShinyButtonProps> = ({
           className,
         )}
       >
-        {/* Shine effect */}
         <motion.span
           className="absolute inset-0 z-0"
           animate={{
@@ -71,10 +70,8 @@ export const ShinyButton: React.FC<ShinyButtonProps> = ({
           }}
         />
         
-        {/* Inner glow */}
         <span className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-white/10 z-0" />
         
-        {/* Text */}
         <span className="relative z-10 text-white font-semibold drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
           {children}
         </span>

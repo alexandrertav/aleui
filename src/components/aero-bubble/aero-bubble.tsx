@@ -39,10 +39,8 @@ export const AeroBubble: React.FC<AeroBubbleProps> = ({
         ${className}
       `}
     >
-      {/* Shine effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent rounded-full"></div>
       
-      {/* Inner glow */}
       <div className="absolute bottom-2 right-2 w-1/3 h-1/3 bg-white/30 rounded-full blur-md"></div>
     </div>
   );

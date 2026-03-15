@@ -35,10 +35,8 @@ export const Modal: React.FC<ModalProps> = ({
       className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fadeIn"
       onClick={onClose}
     >
-      {/* Backdrop */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
 
-      {/* Modal */}
       <div
         className={`
           ${glassClasses}
@@ -48,7 +46,6 @@ export const Modal: React.FC<ModalProps> = ({
         `}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
         {title && (
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold text-white">{title}</h2>
@@ -72,7 +69,6 @@ export const Modal: React.FC<ModalProps> = ({
           </div>
         )}
 
-        {/* Content */}
         <div className="text-white">{children}</div>
       </div>
     </div>
