@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Frutiger Aero Glassmorphism */
+@layer components {
+  .glass {
+    @apply bg-gradient-to-br from-cyan-400/20 to-blue-400/10 backdrop-blur-md border border-cyan-300/30 rounded-xl shadow-aero;
+  }
+
+  .glass-light {
+    @apply bg-gradient-to-br from-cyan-400/20 to-blue-400/10 backdrop-blur-md border border-cyan-300/30 rounded-xl shadow-aero;
+  }
+
+  .glass-medium {
+    @apply bg-gradient-to-br from-sky-400/25 to-cyan-400/15 backdrop-blur-lg border border-sky-300/40 rounded-xl shadow-aero-lg;
+  }
+
+  .glass-dark {
+    @apply bg-gradient-to-br from-blue-500/30 to-cyan-500/20 backdrop-blur-md border border-blue-300/30 rounded-xl shadow-aero;
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300 hover:from-cyan-400/30 hover:to-blue-400/20 hover:shadow-aero-lg;
+  }
+  
+  .aero-shine {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .aero-shine::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  }
+}
+
+/* Base styles */
+body {
+  @apply antialiased;
+}
+
+/* Custom scrollbar for glassmorphism aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white/5 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 rounded-full backdrop-blur-sm;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/30;
+}

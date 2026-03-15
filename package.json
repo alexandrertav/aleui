@@ -1,0 +1,67 @@
+{
+  "name": "@alexandretav/aleui",
+  "version": "1.1.2",
+  "description": "Glass UI components for React",
+  "main": "src/components/index.ts",
+  "types": "src/components/index.ts",
+  "bin": {
+    "aleui": "cli.js"
+  },
+  "files": [
+    "src/components",
+    "src/theme",
+    "src/utils",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react",
+    "glassmorphism",
+    "frutiger-aero",
+    "ui",
+    "components",
+    "tailwind",
+    "typescript",
+    "nextjs"
+  ],
+  "author": "Alexandre R. Tavares",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandrertav/alex-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexandrertav/alex-ui/issues"
+  },
+  "homepage": "https://github.com/alexandrertav/alex-ui#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "peerDependencies": {
+    "framer-motion": "^11.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "dependencies": {
+    "framer-motion": "^11.0.0",
+    "lucide": "^0.577.0",
+    "lucide-react": "^0.577.0",
+    "next": "14.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
