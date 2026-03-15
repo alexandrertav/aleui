@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <nav className="flex items-center gap-2 md:gap-4">
               <a href="#" className="text-xs md:text-sm text-white/70 hover:text-white transition-colors">Docs</a>
-              <a href="#" className="text-xs md:text-sm text-white/70 hover:text-white transition-colors">GitHub</a>
+              <a href="https://github.com/alexandrertav/aleui" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm text-white/70 hover:text-white transition-colors">GitHub</a>
             </nav>
           </div>
         </div>
@@ -45,9 +45,11 @@ export default function Home() {
           <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed px-4">
             Copy. Paste. Customize. Built with React, TypeScript, and Tailwind CSS.
           </p>
-          <ShinyButton size="sm" className="sm:text-base">
-            View on GitHub
-          </ShinyButton>
+          <a href="https://github.com/alexandrertav/aleui" target="_blank" rel="noopener noreferrer">
+            <ShinyButton size="sm" className="sm:text-base">
+              View on GitHub
+            </ShinyButton>
+          </a>
         </div>
 
         <div className="mb-8 md:mb-16">
